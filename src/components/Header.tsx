@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { RiMoonFill, RiSunFill } from "react-icons/ri";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [theme, setTheme] = useState<"light" | "dark">(() => {
@@ -21,6 +22,8 @@ const Header = () => {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
+  const navigate = useNavigate();
+
   return (
     <header className="sticky top-0 z-50 w-full bg-indigo-600 dark:bg-gray-900 text-white shadow-lg">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
@@ -41,7 +44,10 @@ const Header = () => {
           >
             {theme === "light" ? <RiMoonFill /> : <RiSunFill />}
           </button>
-          <button className="px-4 py-2 text-sm font-medium bg-white/10 hover:bg-white/20 rounded-lg transition-colors dark:text-green-500">
+          <button
+            onClick={() => navigate("/auth/login")}
+            className="px-4 py-2 text-sm font-medium bg-white/10 hover:bg-white/20 rounded-lg transition-colors dark:text-green-500"
+          >
             Sign In
           </button>
         </div>
