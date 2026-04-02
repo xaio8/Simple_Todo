@@ -1,14 +1,8 @@
-import Layout from "./layout/Layout";
-import Hero from "./page/Hero";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./router/router";
 
 function App() {
-  return (
-    <>
-      <Layout>
-        <Hero />
-      </Layout>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
