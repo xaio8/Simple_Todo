@@ -20,7 +20,7 @@ const TodoRow = ({ todo, onDelete, onEdit }: Props) => {
       <div
         className={`group flex items-center justify-between w-full p-3 sm:p-4 rounded-xl border transition-all duration-200 ${
           isCompleted
-            ? "bg-gray-50 border-gray-200 opacity-75"
+            ? "bg-gray-100 border-gray-200 opacity-75"
             : "bg-white border-gray-200 hover:shadow-md hover:border-gray-300"
         }`}
       >

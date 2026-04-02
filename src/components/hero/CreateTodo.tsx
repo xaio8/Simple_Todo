@@ -36,17 +36,17 @@ const CreateTodo = () => {
 
   return (
     <div className="w-95 lg:w-120 flex justify-center p-4 sm:p-0">
-      <div className="w-full max-w-lg bg-white rounded-2xl shadow-md p-4 sm:p-6 border border-gray-200">
+      <div className="w-full max-w-lg bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-md p-4 sm:p-6 border-none">
         {/* Header */}
         <div className="mb-4 sm:mb-5">
-          <h2 className="text-xl sm:text-2xl font-semibold text-gray-800">
+          <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-gray-100">
             Create Todo
           </h2>
         </div>
 
         {/* Title Input */}
         <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-600 mb-1">
+          <label className="block text-sm font-medium text-gray-600 dark:text-gray-100 mb-1">
             Title
           </label>
           <input
@@ -60,7 +60,7 @@ const CreateTodo = () => {
 
         {/* Content Input */}
         <div className="mb-5">
-          <label className="block text-sm font-medium text-gray-600 mb-1">
+          <label className="block text-sm font-medium text-gray-600 dark:text-gray-100 mb-1">
             Content
           </label>
           <textarea
