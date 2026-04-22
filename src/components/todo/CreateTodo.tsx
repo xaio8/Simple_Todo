@@ -23,13 +23,14 @@ const CreateTodo = () => {
       return;
     }
     const todo: Todo = {
-      id: (Math.random() * 1000).toString(),
+      id: Date.now().toString(),
       title: title,
       content: content,
       status: "pending",
       time: currentDate,
     };
     dispatch(addTodo(todo));
+    toast.success("Add Todo Successfully");
     setTitle("");
     setContent("");
   };

@@ -34,7 +34,7 @@ const TodoList = () => {
         </span>
       </h2>
 
-      <div className="space-y-3 sm:space-y-4 mt-3 max-h-[60vh] sm:max-h-96 overflow-y-auto pr-1 sm:pr-2 custom-scroll">
+      <div className="space-y-3 sm:space-y-4 mt-3 max-h-[60vh] sm:max-h-96 overflow-y-auto pr-1 sm:pr-2 custom-scroll p-2">
         {todos.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-10 text-center">
             <p className="text-gray-500 text-sm dark:text-white">

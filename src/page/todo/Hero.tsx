@@ -1,5 +1,5 @@
-import CreateTodo from "../components/hero/CreateTodo";
-import TodoList from "../components/hero/TodoList";
+import CreateTodo from "../../components/todo/CreateTodo";
+import TodoList from "../../components/todo/TodoList";
 
 const Hero = () => {
   return (
